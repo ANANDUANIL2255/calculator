@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div style="background-color: black;height: 470px;width:400px; margin-left: 35%; margin-top: 100px; border-radius: 10px;"
+        class="container ">
+        <table class="calculator">
+
+
+            <input type="text" placeholder="0" value="" id="result" style="height: 90px;margin-left: 30px;margin-top: 10px;width: 85%;margin-top: 30px; text-align: end ;border-radius: 10px; "
+                >
+            <tr>
+                <td> <input type="button" value="AC" onclick="clearScreen()"
+                        style="margin-left: 30px;height: 50px; width: 60px;margin-top: 30px; background-color: red;border-radius: 10px;">
+                </td>
+                <td> <input type="button" value="%" onclick="display('%')"
+                        style="margin-left: 30px;height: 50px; width: 60px; margin-top: 30px;background-color: yellow;border-radius: 10px;">
+                </td>
+                <td> <input type="button" value="=" onclick="equal('')"
+                        style="margin-left: 30px;height: 50px; width: 60px;margin-top: 30px;background-color: green;border-radius: 10px;">
+                </td>
+                <td> <input type="button" value="DEL" onclick="delet('')"
+                        style="margin-left: 30px;height: 50px; width: 60px;margin-top: 30px;background-color: orangered;border-radius: 10px;">
+                </td>
+
+            </tr>
+            <tr>
+                <td> <input type="button" value="7" onclick="display('7')"
+                        style="margin-left: 30px;height: 50px; width: 60px; margin-top: 0px;background-color: salmon;border-radius: 10px;">
+                </td>
+                <td> <input type="button" value="8" onclick="display('8')"
+                        style="margin-left: 30px;height: 50px; width: 60px;margin-top: 0px;background-color: salmon;border-radius: 10px;">
+                </td>
+                <td> <input type="button" value="9" onclick="display('9')"
+                        style="margin-left: 30px;height: 50px; width: 60px;margin-top: 0px;background-color: salmon;border-radius: 10px;">
+                </td>
+                <td> <input type="button" value="-" onclick="display('-')"
+                        style="margin-left: 30px;height: 50px; width: 60px;margin-top: 0px;background-color: orangered;border-radius: 10px;">
+                </td>
+            </tr>
+            <tr>
+                <td> <input type="button" value="4" onclick="display('4')"
+                        style="margin-left: 30px;height: 50px; width: 60px; margin-top: 0px;background-color: salmon;border-radius: 10px;">
+                </td>
+                <td> <input type="button" value="5" onclick="display('5')"
+                        style="margin-left: 30px;height: 50px; width: 60px;margin-top: 0px;background-color: salmon;border-radius: 10px;">
+                </td>
+                <td> <input type="button" value="6" onclick="display('6')"
+                        style="margin-left: 30px;height: 50px; width: 60px;margin-top: 0px;background-color: salmon;border-radius: 10px;">
+                </td>
+                <td> <input type="button" value="+" onclick="display('+')"
+                        style="margin-left: 30px;height: 50px; width: 60px;margin-top: 0px;background-color: orangered;border-radius: 10px;">
+                </td>
+            </tr>
+            <tr>
+                <td> <input type="button" value="1" onclick="display('1')"
+                        style="margin-left: 30px;height: 50px; width: 60px; margin-top: 0px;background-color: salmon;border-radius: 10px;">
+                </td>
+                <td> <input type="button" value="2" onclick="display('2')"
+                        style="margin-left: 30px;height: 50px; width: 60px;margin-top: 0px;background-color: salmon;border-radius: 10px;">
+                </td>
+                <td> <input type="button" value="3" onclick="display('3')"
+                        style="margin-left: 30px;height: 50px; width: 60px;margin-top: 0px;background-color: salmon;border-radius: 10px;">
+                </td>
+                <td> <input type="button" value="/" onclick="display('/')"
+                        style="margin-left: 30px;height: 50px; width: 60px;margin-top: 0px;background-color: orangered;border-radius: 10px;">
+                </td>
+            </tr>
+            <tr>
+                <td> <input type="button" value="00" onclick="display('00')"
+                        style="margin-left: 30px;height: 50px; width: 60px; margin-top: 0px;background-color: salmon;border-radius: 10px;">
+                </td>
+                <td> <input type="button" value="0" onclick="display('0')"
+                        style="margin-left: 30px;height: 50px; width: 60px;margin-top: 0px;background-color: salmon;border-radius: 10px;">
+                </td>
+                <td> <input type="button" value="." onclick="display('.')"
+                        style="margin-left: 30px;height: 50px; width: 60px;margin-top: 0px;background-color: salmon;border-radius: 10px;">
+                </td>
+                <td> <input type="button" value="*" onclick="display('*')"
+                        style="margin-left: 30px;height: 50px; width: 60px;margin-top: 0px;background-color: orangered;border-radius: 10px;">
+                </td>
+            </tr>
+        </table>
+    </div>
+
+</body>
+<script src="./calc.js"></script>
+</html>
